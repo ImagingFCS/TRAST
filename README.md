@@ -6,7 +6,7 @@ Transient State (TRAST) monitoring by time-modulated illumination is a technique
 TRAST monitoring has found applications in life sciences for measuring oxygen consumption during the contraction of a single smooth muscle cell (Geissbuehler et al. 2010), for investigating patterns of altered oxygen consumption in cancer cells (Spielmann et al. 2014), for assessment of transferrin recycling in cells (Geissbuehler et al. 2012) and for measuring oxygen concentrations inside bacterial biofilms (Karampatzakis et al. 2016).
 
 ## Downloads
-
+![Screenshot](demo.png)
 The script is separated in two parts. Firstly, the images taken with increasing duty cycles are read, and a stack is created and exported. Secondly, the stack is imported and processed. A three-state energy model (ground - excited singlet - excited triplet) is considered and used for the fit (Geissbuehler et al. 2010). The user can choose which parameters should be held constant during fitting, what the starting values should and a number of other parameters. The two scripts and a demo data set can be downloaded below:
 
 1. The **prepare_stack.m** script reads the contents of a folder where the images (.tif) taken with increasing duty cycles are saved. The filenames need to resemble each duty cycle, For example, if 4% duty cycle was used, the filename should be 4.tif. The period of pulse repetition is set within the script. The script visualises the raw intensity curves of each pixel saves the variables as sample.mat
